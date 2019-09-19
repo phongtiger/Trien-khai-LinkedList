@@ -1,10 +1,11 @@
 public class Test {
     public static void main(String[] args) {
-        MyLinkedList<String> linkedList = new MyLinkedList("goc");
-        linkedList.addFirst("xinchao");
-        linkedList.addFirst("thank");
-        linkedList.addLast("them cuoi thanh cong");
-        linkedList.add(0,"hello");
+        MyLinkedList<String> linkedList = new MyLinkedList("11");
+        for (int i = 10; i > -1; i--) {
+            linkedList.addFirst(""+ i);
+        }
         linkedList.printList();
+        System.out.println("\n");
+        System.out.println(linkedList.remove(7));
     }
 }
